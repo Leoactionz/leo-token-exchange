@@ -1,0 +1,168 @@
+.content {
+  background-color: #1d1d1d;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding: 8px;
+  z-index: 1
+}
+
+.content>div {
+  width: 20%;
+  padding-right: 8px
+}
+
+.content>div:first-child {
+  min-width: 220px
+}
+
+.content>div:nth-child(2) {
+  min-width: 200px
+}
+
+.content div:nth-child(3) {
+  width: 40%
+}
+
+.content>div:last-child {
+  padding-right: 0;
+  min-width: 240px
+}
+
+@media (max-width:992px) {
+  .content {
+    display: block;
+    overflow-y: auto
+  }
+
+  .content>div {
+    width: 100% !important;
+    padding-right: 0;
+    padding-bottom: 8px
+  }
+}
+
+.vertical>div {
+  height: 100%
+}
+
+.vertical-split {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap
+}
+
+.vertical-split>div {
+  height: 50%
+}
+
+.vertical-split>div:first-child {
+  margin-bottom: 8px
+}
+
+.vertical-split:last-child>div:first-child {
+  height: 60%
+}
+
+.vertical-split:last-child>div:last-child {
+  height: 40%
+}
+
+@media (max-width:992px) {
+  .vertical-split {
+    display: block
+  }
+
+  .vertical-split>div,
+  .vertical-split>div:first-child {
+    height: auto
+  }
+}
+
+.card {
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.card-header {
+  padding: 8px 4px;
+}
+
+.card-body {
+  flex: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding: 2px;
+}
+
+.card-body th {
+  border-top: 0;
+}
+
+.card-body .trade-time {
+  color: rgba(255, 255, 255, 0.65);
+  white-space: nowrap;
+}
+
+.card-body .transaction-tabs {
+  border-bottom: 1px solid #dee2e6;
+  padding: 8px 8px 0;
+}
+
+.card-body .transaction-tabs .nav-link {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px 6px 0 0;
+  color: #6c757d;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 8px 16px;
+}
+
+.card-body .transaction-tabs .nav-link:hover {
+  color: #dee2e6;
+}
+
+.card-body .transaction-tabs .nav-link.active {
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  color: #212529;
+}
+
+.card-body .price-chart {
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.card-body .price-chart .price {
+  padding-left: 20px;
+}
+
+td.cancel-order {
+  color: #dc3545;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+tr.order-book-order {
+  cursor: pointer;
+}
+
+.form-control.bg-dark::placeholder {
+  color: rgba(222, 226, 230, 0.55);
+}

@@ -1,0 +1,19 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://agentrouter.org",
+    "ANTHROPIC_AUTH_TOKEN": "sk-ddZrPMbQAId5mZ08W2jZiZKZ1ejlTwjbs13RL3zFBKZ18HOM",
+    "ANTHROPIC_API_KEY": "",
+    "CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY": "1"
+  }
+}
+
+
+// {
+//   "permissions": {
+//     "allow": [
+//       "Bash(node -e ' *)",
+//       "Bash(node -p \"require\\('./package.json'\\).dependencies.web3\")",
+//       "Bash(node -p \"JSON.stringify\\(require\\('./package.json'\\).dependencies,null,1\\)\")"
+//     ]
+//   }
+// }
